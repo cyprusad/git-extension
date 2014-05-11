@@ -4,6 +4,15 @@
   "description": "This extension helps you use native shell commands in the
                   browser from within the browser",
   "version": "1.0",
-  "permissions": {},
+  "icons": {},
+  "permissions": [
+    "tabs",
+    "bookmarks",
+    "history",
+    "clipboardRead",
+    "storage",
+    "<all_urls>"
+  ],
+  "content_scripts": {},
   "browser_action": {}
 }
