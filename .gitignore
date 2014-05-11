@@ -1,0 +1,6 @@
+*.un~
+*.swo
+*.swp
+*.crx
+node_modules/*
+dist
