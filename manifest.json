@@ -1,0 +1,9 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub.com terminal",
+  "description": "This extension helps you use native shell commands in the
+                  browser from within the browser",
+  "version": "1.0",
+  "permissions": {},
+  "browser_action": {}
+}
