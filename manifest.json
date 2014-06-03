@@ -1,24 +1,23 @@
 {
   "manifest_version": 2,
-  "name": "GitHub.com Terminal",
-  "description": "This extension helps you use native shell commands in the
-                  browser from within the browser",
+  "name": "GitHub.com search extension",
+  "description": "This extension helps you use search for key words within a GitHub repo",
   "version": "1.0",
-  "icons": {},
-  "permissions": [
-    "tabs",
-    "bookmarks",
-    "history",
-    "clipboardRead",
-    "storage",
-    "<all_urls>"
-  ],
+  "icons": {"19": "icons/icon.png"},
+  "permissions": ["tabs"],
   "page_action": {
       "default_icon": "icons/icon.png",
-      "default_title": "GitHub.com Terminal"
+      "default_title": "GitHub.com Search Extension"
     },
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*/*"],
+      "exclude_globs": ["*github.com/*/"],
+      "js": ["content_scripts/jquery-1.11.1.min.js", "content_scripts/search.js"]
+    }
+  ],
   "background": {
-    "scripts": ["content_scripts/background.js"],
+    "scripts": ["content_scripts/jquery-1.11.1.min.js", "content_scripts/background.js"],
     "persistent": false
   }
 }
