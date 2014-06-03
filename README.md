@@ -1,6 +1,2 @@
-FAQ
-===
-
-###What is this?
-A chrome extension that throws a command line prompt
-in the browser when navigating through projects on GitHub
+##Search within GitHub repos
+A chrome extension that lets you search within GitHub repos
