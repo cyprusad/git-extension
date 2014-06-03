@@ -12,7 +12,7 @@ function checkForValidUrl(tabId, changeInfo, tab) {
 // Called when the page action is clicked
 function onClick(tab){
   chrome.tabs.getSelected(null, function(tab) {
-    chrome.tabs.sendMessage(tab.id, {action: 'toggleTerminal'});
+    chrome.tabs.sendMessage(tab.id, {action: 'toggleSearch'});
   });
 }
 
