@@ -7,17 +7,17 @@
   "permissions": ["tabs"],
   "page_action": {
       "default_icon": "icons/icon.png",
-      "default_title": "GitHub.com Search Extension"
+      "default_title": "GitHub.com Search Extension: Click page action icon or press Ctrl + Shift + F to search"
     },
   "content_scripts": [
     {
       "matches": ["*://github.com/*/*"],
       "exclude_globs": ["*github.com/*/"],
-      "js": ["content_scripts/jquery-1.11.1.min.js", "content_scripts/search.js"]
+      "js": ["content_scripts/jquery-1.11.1.min.js", "content_scripts/jquery.ui.position.min.js", "content_scripts/search.js"]
     }
   ],
   "background": {
-    "scripts": ["content_scripts/jquery-1.11.1.min.js", "content_scripts/background.js"],
+    "scripts": ["content_scripts/jquery-1.11.1.min.js",  "content_scripts/background.js"],
     "persistent": false
   }
 }

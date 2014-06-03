@@ -63,7 +63,8 @@ $(window).keydown(function(e){
 });
 
 chrome.extension.onMessage.addListener(function(request){
-  if (request.action === 'toggleSearchBox'){
+  if (request.action === 'toggleSearch'){
+    console.log("Pressed");
     if (searchBoxVisible){
       hideSearchBox();
     } else {

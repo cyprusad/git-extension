@@ -18,3 +18,4 @@ function onClick(tab){
 
 // Tell chrome to call this method when a new site is visited
 chrome.tabs.onUpdated.addListener(checkForValidUrl);
+chrome.pageAction.onClicked.addListener(onClick);
